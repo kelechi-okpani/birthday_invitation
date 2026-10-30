@@ -52,6 +52,28 @@ function card(g, e) {
         </td>
       </tr>
     </table>
+    
+    <div style="text-align:center; margin-top:32px; border-top:1px solid rgba(255,255,255,0.06); padding-top:24px;">
+      <p style="font-size:13px; font-family:system-ui, -apple-system, sans-serif; color:#CBD5E1; margin:0 0 16px 0; letter-spacing:0.02em;">
+        Will you be joining us? Please let us know.
+      </p>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
+        <tr>
+          <!-- Yes Button -->
+          <td style="padding:0 6px;" align="center">
+            <a href="${process.env.NEXT_PUBLIC_SITE_URL}/rsvp/${g.id}?answer=confirmed" target="_blank" style="display:inline-block; padding:12px 24px; border-radius:12px; background:linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%); color:#0F172A; font-family:system-ui, -apple-system, sans-serif; font-size:13px; font-weight:600; text-decoration:none; box-shadow:0 4px 12px rgba(245,158,11,0.25);">
+              Yes, I will attend
+            </a>
+          </td>
+          <!-- No Button -->
+          <td style="padding:0 6px;" align="center">
+            <a href="${process.env.NEXT_PUBLIC_SITE_URL}/rsvp/${g.id}?answer=declined" target="_blank" style="display:inline-block; padding:12px 24px; border-radius:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.12); color:#CBD5E1; font-family:system-ui, -apple-system, sans-serif; font-size:13px; font-weight:500; text-decoration:none;">
+              No, I cannot attend
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
 
     <div style="text-align:center; margin-top:24px;">
       <p style="font-size:12px; color:#64748B; margin:0; line-height:1.5;">
